@@ -2,6 +2,8 @@ import sqlite3
 #data extracted from scanned answersheet of one record
 #need to iterate for every answer (i.e q2 = B, q3 = D)
 sourceList= [("A")]
+#iterating for every value in list
+# for x in sourceList:
 
 try:
     conn=sqlite3.connect("tmp1.db")
