@@ -34,6 +34,9 @@
   <label for="variant">variant:</label>
   <input type="text" id="variant">
 
+  <label for="year">year:</label>
+  <input type="text" id="year">
+
   <!-- Next button -->
   <button onclick="goToNextPage()">Next</button>
 
@@ -46,6 +49,7 @@
       const dropdownValue = document.getElementById('terms').value;
       const dropdownValue = document.getElementById('paper').value;
       const nameValue = document.getElementById('variant').value;
+      const nameValue = document.getElementById('year').value;
 
       // Example: Redirect to another page with query parameters
       const queryString = `?dropdown=${dropdownValue}&name=${encodeURIComponent(nameValue)}&email=${encodeURIComponent(emailValue)}&message=${encodeURIComponent(messageValue)}`;
