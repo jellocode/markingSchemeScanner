@@ -1,0 +1,56 @@
+ <!--enter marking scheme details
+ format = 5070_s22_ms_12.pdf-->
+ <!DOCTYPE html>
+ <html>
+ <head>
+   <title>Enter details</title>
+ </head>
+ <body>
+   <h1>Paper code</h1>
+   <h3> (in the format eg: 5070_s22_ms_12) </h3>
+
+   <!--course code-->
+  <label for="course code">course code:</label>
+  <select id="courses">
+    <option value="9702">Phys</option>
+    <option value="9701">Chem</option>
+    <option value="9700">Bio</option>
+  </select>
+
+  <!-- term -->
+  <label for="term">term:</label>
+  <select id="terms">
+    <option value="m">feb/march</option>
+    <option value="s">may/june</option>
+    <option value="w">oct/nov</option>
+  </select>
+
+  <!-- term -->
+  <label for="paper type">type:</label>
+  <select id="paper">
+    <option value="1">MCQs</option>
+  </select>
+
+  <label for="variant">variant:</label>
+  <input type="text" id="variant">
+
+  <!-- Next button -->
+  <button onclick="goToNextPage()">Next</button>
+
+  <!-- Script to handle navigation -->
+  <script>
+    function goToNextPage() {
+      // Add your code to handle the next page navigation here
+      // You can access the values of the dropdown menu and input fields using JavaScript
+      const dropdownValue = document.getElementById('courses').value;
+      const dropdownValue = document.getElementById('terms').value;
+      const dropdownValue = document.getElementById('paper').value;
+      const nameValue = document.getElementById('variant').value;
+
+      // Example: Redirect to another page with query parameters
+      const queryString = `?dropdown=${dropdownValue}&name=${encodeURIComponent(nameValue)}&email=${encodeURIComponent(emailValue)}&message=${encodeURIComponent(messageValue)}`;
+      window.location.href = 'next-page.html' + queryString;
+    }
+  </script>
+</body>
+</html>
