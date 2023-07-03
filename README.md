@@ -17,3 +17,11 @@ back end
 * create a webscraper to list answers from marking scheme
 * create another database to store answers from webscraper
 * delete databses after program done
+
+notes
+- PDF Processing
+- Text Extraction
+- Database Management
+- Web Scraping
+- Data Comparison
+- User Interface
