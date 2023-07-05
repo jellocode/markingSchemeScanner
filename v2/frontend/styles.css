@@ -1,13 +1,15 @@
 body {
     background-color: #F8E8E8;
-    color: #484848;
+    color: #4a4848;
     font-family: Arial, sans-serif;
   }
   
   h1 {
     color: #FF85A1;
   }
-  
+  p {
+    color:rgb(198, 72, 110)
+  }
   form {
     max-width: 400px;
     margin: 20px auto;
