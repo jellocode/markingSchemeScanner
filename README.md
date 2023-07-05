@@ -19,9 +19,9 @@ back end
 * delete databses after program done
 
 notes
+- Web Scraping
 - PDF Processing
 - Text Extraction
 - Database Management
-- Web Scraping
 - Data Comparison
 - User Interface

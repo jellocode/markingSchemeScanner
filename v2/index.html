@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Upload Past Paper</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>Upload and Compare Past Papers</h1>
+  <form id="uploadForm" enctype="multipart/form-data">
+    <div>
+      <label for="pdfFile">PDF File:</label>
+      <input type="file" id="pdfFile" name="pdfFile" accept=".pdf" required>
+    </div>
+    <div>
+      <label for="variant">Variant:</label>
+      <input type="text" id="variant" name="variant" required>
+    </div>
+    <div>
+      <label for="year">Year:</label>
+      <input type="text" id="year" name="year" required>
+    </div>
+    <div>
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+  <div id="result"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
